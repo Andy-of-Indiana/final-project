@@ -1,0 +1,55 @@
+.about {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+
+  .aboutGreeter {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+
+    .aboutTitleImg {
+      width: auto;
+      height: 380px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(
+          to bottom,
+          $yellowGradientDark,
+          $yellowGradientDark
+        ),
+        url(../assets/images/about.jpg);
+    }
+    .aboutTitle {
+      width: 250px;
+      height: 50px;
+      border: 2px;
+      border-style: solid;
+      border-color: transparent transparent $black transparent;
+      position: absolute;
+      bottom: 0;
+
+      h2 {
+        font-size: $sizeHeader;
+        font-family: $gillSans;
+        color: $black;
+      }
+    }
+  }
+  .aboutWords {
+    width: 75%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 35px;
+
+    p {
+      font-size: $sizePara;
+      font-family: $gillSans;
+      color: $black;
+    }
+  }
+}

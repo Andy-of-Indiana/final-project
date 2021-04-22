@@ -1,0 +1,98 @@
+.gallerySubPages {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+
+  .gallerySubImg {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .gallerySubTitle {
+      position: absolute;
+      bottom: -85px;
+
+      h1 {
+        font-size: 200px;
+        font-family: $gillSans;
+        text-shadow: 5px 5px RGB(0, 0, 0, 0.16);
+
+        .enlarge {
+          font-size: 300px;
+        }
+      }
+    }
+    .title1 {
+      color: $yellow;
+    }
+    .title2 {
+      color: $red;
+    }
+    .title3 {
+      color: $green;
+    }
+    .title4 {
+      color: $purple;
+
+      h1 {
+        font-size: 185px;
+      }
+    }
+    .title5 {
+      color: $blue;
+    }
+  }
+  .img1 {
+    background-image: linear-gradient(
+        to bottom,
+        $yellowGradient,
+        $yellowGradient
+      ),
+      url(../assets/images/1.png);
+  }
+  .img2 {
+    background-image: linear-gradient(to bottom, $redGradient, $redGradient),
+      url(../assets/images/2.jpeg);
+  }
+  .img3 {
+    background-image: linear-gradient(to bottom, $greenGradient, $greenGradient),
+      url(../assets/images/3.jpg);
+  }
+  .img4 {
+    background-image: linear-gradient(
+        to bottom,
+        $purpleGradient,
+        $purpleGradient
+      ),
+      url(../assets/images/4.jpg);
+  }
+  .img5 {
+    background-image: linear-gradient(to bottom, $blueGradient, $blueGradient),
+      url(../assets/images/5.png);
+  }
+  .gallerySubWords {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 35px;
+
+    .gallerySubCol {
+      width: 47.5%;
+      height: 150px;
+
+      p {
+        font-size: $sizePara;
+        font-family: $gillSans;
+        color: $black;
+      }
+    }
+  }
+}

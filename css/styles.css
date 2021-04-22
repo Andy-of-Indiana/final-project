@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.stress {
+  font-weight: bold;
+}
+
+.navWhite {
+  width: 100%;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(255, 209, 64, 0.8), RGB(255, 209, 64, 0.8)), url(../assets/images/home-hero.jpg);
+}
+.navWhite nav {
+  width: 75%;
+  height: 100px;
+  background-color: transparent;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent RGB(255, 255, 255) transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.navWhite nav #logo {
+  width: 120px;
+  height: 55px;
+  margin-top: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/logo-white.png);
+}
+.navWhite nav .linksWhite {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.navWhite nav .linksWhite a {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: RGB(255, 255, 255);
+}
+.navWhite nav .linksWhite p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(238, 67, 103);
+}
+.navWhite .homeGreeter {
+  width: 725px;
+  height: 270px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+.navWhite .homeGreeter h1 {
+  font-size: 35px;
+  font-family: PTSerifReg;
+  color: RGB(255, 255, 255);
+}
+.navWhite .homeGreeter h2 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(238, 67, 103);
+  margin-top: -48px;
+}
+.navWhite .homeGreeter p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+}
+.navWhite .homeGreeter .homeButton {
+  width: 120px;
+  height: 40px;
+  background-color: RGB(238, 67, 103);
+  margin: 0 auto;
+}
+.navWhite .homeGreeter .homeButton a {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: RGB(255, 255, 255);
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.navBlack {
+  width: 75%;
+  height: 100px;
+  background-color: RGB(255, 255, 255);
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent RGB(0, 0, 0) transparent;
+  margin: 0 auto;
+}
+.navBlack nav {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.navBlack nav #logo {
+  width: 120px;
+  height: 55px;
+  margin-top: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/logo-black.png);
+}
+.navBlack nav .linksBlack {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.navBlack nav .linksBlack a {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: RGB(0, 0, 0);
+}
+.navBlack nav .linksBlack p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(238, 67, 103);
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: RGB(238, 67, 103);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer #logo {
+  width: 120px;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/logo-white.png);
+}
+.footer .footerWords {
+  width: 380px;
+  height: 70px;
+  margin: 0 auto;
+}
+.footer .footerWords p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+}
+.footer .footerInput {
+  width: 55%;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+}
+.footer .footerInput .emailTextbox {
+  width: 75%;
+  height: auto;
+  background-color: #f56b88;
+}
+.footer .footerInput .emailTextbox p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255, 0.5);
+  text-align: left;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+.footer .footerInput .emailButton {
+  width: 25%;
+  height: auto;
+  background-color: RGB(255, 255, 255);
+}
+.footer .footerInput .emailButton a {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: RGB(238, 67, 103);
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+}
+.footer .footerSocials {
+  width: 225px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer .footerSocials #facebook {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/facebook.svg);
+}
+.footer .footerSocials #instagram {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/instagram.svg);
+}
+.footer .footerSocials #twitter {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/twitter.svg);
+}
+.footer .footerCopyright {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+}
+.footer .footerCopyright p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255, 0.5);
+}
+
+@font-face {
+  font-family: PTSerifReg;
+  src: url(../assets/fonts/PTSerif-Regular.ttf);
+}
+.home {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+.home .quoteSection {
+  width: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: RGB(255, 255, 255);
+}
+.home .quoteSection .quote {
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.home .quoteSection .quote p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 209, 64);
+}
+.home .quoteSection .quote h5 {
+  font-size: 17px;
+  font-family: PTSerifReg;
+  color: RGB(238, 67, 103);
+}
+.home .quoteSection .quote h6 {
+  font-size: 12px;
+  font-family: PTSerifReg;
+  color: #a8a8a8;
+}
+.home .upcomingEventsSection {
+  width: auto;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: RGB(84, 13, 110);
+}
+.home .upcomingEventsSection .upcomingEventsTitle {
+  width: 400px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent RGB(255, 255, 255) transparent;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.home .upcomingEventsSection .upcomingEventsTitle h2 {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+}
+.home .upcomingEventsSection .upcomingEventsContent {
+  width: 95%;
+  height: 175px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: RGB(238, 67, 103);
+  text-align: center;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .date h2 {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+  margin-top: 5px;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .date h3 {
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+  margin-top: -20px;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .eventWords {
+  width: 225px;
+  height: auto;
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .eventWords h3 {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+}
+.home .upcomingEventsSection .upcomingEventsContent .event .eventWords p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(255, 255, 255);
+}
+
+@font-face {
+  font-family: PTSerifReg;
+  src: url(../assets/fonts/PTSerif-Regular.ttf);
+}
+.about {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.about .aboutGreeter {
+  width: 75%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+}
+.about .aboutGreeter .aboutTitleImg {
+  width: auto;
+  height: 380px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(255, 209, 64, 0.8), RGB(255, 209, 64, 0.8)), url(../assets/images/about.jpg);
+}
+.about .aboutGreeter .aboutTitle {
+  width: 250px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent RGB(0, 0, 0) transparent;
+  position: absolute;
+  bottom: 0;
+}
+.about .aboutGreeter .aboutTitle h2 {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(0, 0, 0);
+}
+.about .aboutWords {
+  width: 75%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.about .aboutWords p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(0, 0, 0);
+}
+
+.gallery {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.gallery .gallerySection {
+  width: 75%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.gallery .gallerySection .galleryTitle {
+  width: 230px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-color: transparent transparent RGB(0, 0, 0) transparent;
+}
+.gallery .gallerySection .galleryTitle h2 {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(0, 0, 0);
+}
+.gallery .gallerySection .galleryContent {
+  width: 100%;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery .gallerySection .galleryContent .galleryMinorRow {
+  width: 100%;
+  height: 36%;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .gallerySection .galleryContent .galleryMinorRow #galleryYellow {
+  width: 50%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(255, 209, 64, 0.7), RGB(255, 209, 64, 0.7)), url(../assets/images/1.png);
+}
+.gallery .gallerySection .galleryContent .galleryMinorRow #galleryRed {
+  width: 19%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(238, 67, 103, 0.7), RGB(238, 67, 103, 0.7)), url(../assets/images/2.jpeg);
+}
+.gallery .gallerySection .galleryContent .galleryMinorRow #galleryGreen {
+  width: 27%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(8, 173, 105, 0.7), RGB(8, 173, 105, 0.7)), url(../assets/images/3.jpg);
+}
+.gallery .gallerySection .galleryContent .galleryMajorRow {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .gallerySection .galleryContent .galleryMajorRow #galleryPurple {
+  width: 62%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(84, 13, 110, 0.7), RGB(84, 13, 110, 0.7)), url(../assets/images/4.jpg);
+}
+.gallery .gallerySection .galleryContent .galleryMajorRow #galleryBlue {
+  width: 36%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, RGB(59, 206, 171, 0.7), RGB(59, 206, 171, 0.7)), url(../assets/images/5.png);
+}
+
+.gallerySubPages {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.gallerySubPages .gallerySubImg {
+  width: 75%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallerySubPages .gallerySubImg .gallerySubTitle {
+  position: absolute;
+  bottom: -85px;
+}
+.gallerySubPages .gallerySubImg .gallerySubTitle h1 {
+  font-size: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 5px 5px RGB(0, 0, 0, 0.16);
+}
+.gallerySubPages .gallerySubImg .gallerySubTitle h1 .enlarge {
+  font-size: 300px;
+}
+.gallerySubPages .gallerySubImg .title1 {
+  color: RGB(255, 209, 64);
+}
+.gallerySubPages .gallerySubImg .title2 {
+  color: RGB(238, 67, 103);
+}
+.gallerySubPages .gallerySubImg .title3 {
+  color: RGB(8, 173, 105);
+}
+.gallerySubPages .gallerySubImg .title4 {
+  color: RGB(84, 13, 110);
+}
+.gallerySubPages .gallerySubImg .title4 h1 {
+  font-size: 185px;
+}
+.gallerySubPages .gallerySubImg .title5 {
+  color: RGB(59, 206, 171);
+}
+.gallerySubPages .img1 {
+  background-image: linear-gradient(to bottom, RGB(255, 209, 64, 0.7), RGB(255, 209, 64, 0.7)), url(../assets/images/1.png);
+}
+.gallerySubPages .img2 {
+  background-image: linear-gradient(to bottom, RGB(238, 67, 103, 0.7), RGB(238, 67, 103, 0.7)), url(../assets/images/2.jpeg);
+}
+.gallerySubPages .img3 {
+  background-image: linear-gradient(to bottom, RGB(8, 173, 105, 0.7), RGB(8, 173, 105, 0.7)), url(../assets/images/3.jpg);
+}
+.gallerySubPages .img4 {
+  background-image: linear-gradient(to bottom, RGB(84, 13, 110, 0.7), RGB(84, 13, 110, 0.7)), url(../assets/images/4.jpg);
+}
+.gallerySubPages .img5 {
+  background-image: linear-gradient(to bottom, RGB(59, 206, 171, 0.7), RGB(59, 206, 171, 0.7)), url(../assets/images/5.png);
+}
+.gallerySubPages .gallerySubWords {
+  width: 75%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.gallerySubPages .gallerySubWords .gallerySubCol {
+  width: 47.5%;
+  height: 150px;
+}
+.gallerySubPages .gallerySubWords .gallerySubCol p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: RGB(0, 0, 0);
+}

@@ -1,0 +1,117 @@
+.gallery {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+
+  .gallerySection {
+    width: 75%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .galleryTitle {
+      width: 230px;
+      height: 50px;
+      border: 2px;
+      border-style: solid;
+      border-color: transparent transparent $black transparent;
+
+      h2 {
+        font-size: $sizeHeader;
+        font-family: $gillSans;
+        color: $black;
+      }
+    }
+    .galleryContent {
+      width: 100%;
+      height: 575px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .galleryMinorRow {
+        width: 100%;
+        height: 36%;
+        display: flex;
+        justify-content: space-between;
+
+        #galleryYellow {
+          width: 50%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(
+              to bottom,
+              $yellowGradient,
+              $yellowGradient
+            ),
+            url(../assets/images/1.png);
+        }
+        #galleryRed {
+          width: 19%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(
+              to bottom,
+              $redGradient,
+              $redGradient
+            ),
+            url(../assets/images/2.jpeg);
+        }
+        #galleryGreen {
+          width: 27%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(
+              to bottom,
+              $greenGradient,
+              $greenGradient
+            ),
+            url(../assets/images/3.jpg);
+        }
+      }
+      .galleryMajorRow {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        #galleryPurple {
+          width: 62%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(
+              to bottom,
+              $purpleGradient,
+              $purpleGradient
+            ),
+            url(../assets/images/4.jpg);
+        }
+        #galleryBlue {
+          width: 36%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(
+              to bottom,
+              $blueGradient,
+              $blueGradient
+            ),
+            url(../assets/images/5.png);
+        }
+      }
+    }
+  }
+}

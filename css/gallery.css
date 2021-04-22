@@ -1,0 +1,17 @@
+.gallerys {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+.gallerys .gallerySection {
+  width: 75%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: green;
+}
+.gallerys .gallerySection .galleryTitle {
+  height: 40px;
+}
