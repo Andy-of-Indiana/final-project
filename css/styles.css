@@ -581,3 +581,24 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: RGB(0, 0, 0);
 }
+
+.blog {
+  width: 100%;
+  height: 1070px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogSubPages {
+  width: 100%;
+  height: 1070px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  width: 100%;
+  height: 830px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,6 @@
+.blogSubPages {
+  width: 100%;
+  height: 1070px;
+  display: flex;
+  flex-direction: column;
+}
