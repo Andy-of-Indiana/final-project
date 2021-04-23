@@ -1,6 +1,101 @@
 .contact {
   width: 100%;
-  height: 830px;
+  height: 840px;
   display: flex;
   flex-direction: column;
+
+  .contactSection {
+    width: 75%;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .contactTitle {
+      width: 230px;
+      height: 50px;
+      border: 2px;
+      border-style: solid;
+      border-color: transparent transparent $black transparent;
+
+      h2 {
+        font-size: $sizeHeader;
+        font-family: $gillSans;
+        color: $black;
+      }
+    }
+    .contactContent {
+      width: auto;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .contactInputs {
+        width: 100%;
+        height: 525px;
+        display: flex;
+        justify-content: space-between;
+
+        .contactForm {
+          width: 54%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          color: #7a7a7a;
+
+          .contactBoxSmall {
+            width: auto;
+            height: 60px;
+            background-color: #f5f5f5;
+
+            p {
+              font-size: $sizePara;
+              font-family: $gillSans;
+              margin-top: 15px;
+              margin-left: 20px;
+            }
+          }
+          .contactBoxLarge {
+            width: auto;
+            height: 275px;
+            background-color: #f5f5f5;
+            p {
+              font-size: $sizePara;
+              font-family: $gillSans;
+              margin-top: 15px;
+              margin-left: 20px;
+            }
+          }
+        }
+        .contactMap {
+          width: 41%;
+          height: auto;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url(../assets/images/map.jpg);
+        }
+      }
+      .contactButton {
+        width: 175px;
+        height: 50px;
+        background-color: $red;
+        text-align: center;
+
+        a {
+          font-size: $sizeMini;
+          font-family: $gillSans;
+          text-decoration: none;
+          color: $white;
+          margin-top: 14px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,107 @@
 .blog {
   width: 100%;
-  height: 1070px;
+  height: 1250px;
   display: flex;
   flex-direction: column;
+
+  .blogSection {
+    width: 75%;
+    height: 1125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .blogTitle {
+      width: 230px;
+      height: 50px;
+      border: 2px;
+      border-style: solid;
+      border-color: transparent transparent $black transparent;
+
+      h2 {
+        font-size: $sizeHeader;
+        font-family: $gillSans;
+        color: $black;
+      }
+    }
+    .blogContent {
+      width: auto;
+      height: 1050px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .blogRow {
+        width: auto;
+        height: 340px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          width: 47%;
+          text-decoration: none;
+
+          .blogEvent {
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .blogEventDate {
+              width: 80px;
+              height: 80px;
+              background-color: $red;
+              text-align: center;
+
+              h2 {
+                font-size: 40px;
+                font-family: $gillSans;
+                color: $white;
+                margin-top: 5px;
+              }
+              h3 {
+                font-size: $sizePara;
+                font-family: $gillSans;
+                color: $white;
+                margin-top: -20px;
+              }
+            }
+            .blogEventContent {
+              width: 550px;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .blogEventImg {
+                width: auto;
+                height: 175px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(../assets/images/blog.jpg);
+              }
+              .blogEventWords {
+                width: auto;
+                height: auto;
+
+                h3 {
+                  font-size: $sizePara;
+                  font-family: $gillSans;
+                  color: $black;
+                  margin-top: 10px;
+                }
+                p {
+                  font-size: $sizeMini;
+                  font-family: $gillSans;
+                  color: $red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
