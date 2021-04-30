@@ -34,7 +34,7 @@ p {
 }
 .navWhite nav {
   width: 75%;
-  height: 100px;
+  min-height: 100px;
   background-color: transparent;
   border: 2px;
   border-style: solid;
@@ -43,7 +43,7 @@ p {
   justify-content: space-between;
   margin: 0 auto;
 }
-.navWhite nav #logo {
+.navWhite nav .logo {
   width: 120px;
   height: 55px;
   margin-top: 25px;
@@ -70,7 +70,7 @@ p {
   color: RGB(238, 67, 103);
 }
 .navWhite .homeGreeter {
-  width: 725px;
+  max-width: 725px;
   height: 270px;
   text-align: center;
   display: flex;
@@ -113,7 +113,7 @@ p {
 
 .navBlack {
   width: 75%;
-  height: 100px;
+  min-height: 100px;
   background-color: RGB(255, 255, 255);
   border: 2px;
   border-style: solid;
@@ -127,7 +127,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.navBlack nav #logo {
+.navBlack nav .logo {
   width: 120px;
   height: 55px;
   margin-top: 25px;
@@ -163,7 +163,7 @@ p {
   justify-content: space-between;
   text-align: center;
 }
-.footer #logo {
+.footer .logo {
   width: 120px;
   height: 55px;
   margin: 0 auto;
@@ -263,24 +263,84 @@ p {
   font-family: PTSerifReg;
   src: url(../assets/fonts/PTSerif-Regular.ttf);
 }
+@media only screen and (max-width: 950px) {
+  .footer {
+    height: 600px;
+  }
+  .footer .footerInput {
+    height: 120px;
+    flex-direction: column;
+  }
+  .footer .footerInput .emailTextbox {
+    width: 100%;
+    height: 60px;
+  }
+  .footer .footerInput .emailButton {
+    width: 135px;
+    height: 60px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .navWhite {
+    height: 600px;
+  }
+  .navWhite nav {
+    flex-direction: column;
+  }
+  .navWhite nav .logo {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .navWhite nav .linksWhite {
+    width: 100%;
+  }
+
+  .navBlack nav {
+    flex-direction: column;
+  }
+  .navBlack nav .logo {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .navBlack nav .linksBlack {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .footer .footerInput {
+    min-height: 120px;
+    flex-direction: column;
+  }
+  .footer .footerInput .emailTextbox {
+    width: 100%;
+    min-height: 80px;
+  }
+  .footer .footerInput .emailButton {
+    width: 135px;
+    min-height: 60px;
+    margin: 0 auto;
+  }
+}
 .home {
   width: 100%;
-  height: 620px;
+  min-height: 620px;
   display: flex;
   flex-direction: column;
 }
 .home .quoteSection {
   width: auto;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   background-color: RGB(255, 255, 255);
 }
 .home .quoteSection .quote {
-  width: 800px;
-  height: 200px;
+  max-width: 800px;
+  min-height: 200px;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .home .quoteSection .quote p {
   font-size: 20px;
@@ -299,7 +359,7 @@ p {
 }
 .home .upcomingEventsSection {
   width: auto;
-  height: 320px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   background-color: RGB(84, 13, 110);
@@ -320,9 +380,10 @@ p {
 }
 .home .upcomingEventsSection .upcomingEventsContent {
   width: 95%;
-  height: 175px;
+  min-height: 175px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -331,6 +392,7 @@ p {
   height: auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .home .upcomingEventsSection .upcomingEventsContent .event .date {
   width: 60px;
@@ -371,7 +433,7 @@ p {
 }
 .about {
   width: 100%;
-  height: 750px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
 }
@@ -406,9 +468,10 @@ p {
 }
 .about .aboutWords {
   width: 75%;
-  height: 100px;
+  min-height: 100px;
   margin: 0 auto;
   margin-top: 35px;
+  margin-bottom: 100px;
 }
 .about .aboutWords p {
   font-size: 22px;
@@ -505,7 +568,7 @@ p {
 
 .gallerySubPages {
   width: 100%;
-  height: 750px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
 }
@@ -520,34 +583,59 @@ p {
   background-repeat: no-repeat;
 }
 .gallerySubPages .gallerySubImg .gallerySubTitle {
+  height: 14vw;
+  width: 100%;
   position: absolute;
-  bottom: -85px;
+  bottom: 0;
 }
 .gallerySubPages .gallerySubImg .gallerySubTitle h1 {
-  font-size: 200px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 5px 5px RGB(0, 0, 0, 0.16);
-}
-.gallerySubPages .gallerySubImg .gallerySubTitle h1 .enlarge {
-  font-size: 300px;
 }
 .gallerySubPages .gallerySubImg .title1 {
   color: RGB(255, 209, 64);
 }
+.gallerySubPages .gallerySubImg .title1 h1 {
+  font-size: 11vw;
+}
+.gallerySubPages .gallerySubImg .title1 h1 .enlarge {
+  font-size: 14vw;
+}
 .gallerySubPages .gallerySubImg .title2 {
   color: RGB(238, 67, 103);
 }
+.gallerySubPages .gallerySubImg .title2 h1 {
+  font-size: 11vw;
+}
+.gallerySubPages .gallerySubImg .title2 h1 .enlarge {
+  font-size: 14vw;
+}
 .gallerySubPages .gallerySubImg .title3 {
   color: RGB(8, 173, 105);
+}
+.gallerySubPages .gallerySubImg .title3 h1 {
+  font-size: 11vw;
+}
+.gallerySubPages .gallerySubImg .title3 h1 .enlarge {
+  font-size: 14vw;
 }
 .gallerySubPages .gallerySubImg .title4 {
   color: RGB(84, 13, 110);
 }
 .gallerySubPages .gallerySubImg .title4 h1 {
-  font-size: 185px;
+  font-size: 9.5vw;
+}
+.gallerySubPages .gallerySubImg .title4 h1 .enlarge {
+  font-size: 12.5vw;
 }
 .gallerySubPages .gallerySubImg .title5 {
   color: RGB(59, 206, 171);
+}
+.gallerySubPages .gallerySubImg .title5 h1 {
+  font-size: 10vw;
+}
+.gallerySubPages .gallerySubImg .title5 h1 .enlarge {
+  font-size: 13vw;
 }
 .gallerySubPages .img1 {
   background-image: linear-gradient(to bottom, RGB(255, 209, 64, 0.7), RGB(255, 209, 64, 0.7)), url(../assets/images/1.png);
@@ -566,15 +654,16 @@ p {
 }
 .gallerySubPages .gallerySubWords {
   width: 75%;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 35px;
+  margin-bottom: 80px;
 }
 .gallerySubPages .gallerySubWords .gallerySubCol {
   width: 47.5%;
-  height: 150px;
+  min-height: 150px;
 }
 .gallerySubPages .gallerySubWords .gallerySubCol p {
   font-size: 22px;
@@ -584,13 +673,13 @@ p {
 
 .blog {
   width: 100%;
-  height: 1250px;
+  min-height: 1250px;
   display: flex;
   flex-direction: column;
 }
 .blog .blogSection {
   width: 75%;
-  height: 1125px;
+  min-height: 1125px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -611,31 +700,32 @@ p {
 }
 .blog .blogSection .blogContent {
   width: auto;
-  height: 1050px;
+  min-height: 1050px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .blog .blogSection .blogContent .blogRow {
   width: auto;
-  height: 340px;
+  min-height: 340px;
   display: flex;
   justify-content: space-between;
 }
 .blog .blogSection .blogContent .blogRow a {
-  width: 47%;
   text-decoration: none;
 }
 .blog .blogSection .blogContent .blogRow a .blogEvent {
+  max-width: 650px;
   height: auto;
   display: flex;
   justify-content: space-between;
 }
 .blog .blogSection .blogContent .blogRow a .blogEvent .blogEventDate {
-  width: 80px;
+  min-width: 80px;
   height: 80px;
   background-color: RGB(238, 67, 103);
   text-align: center;
+  margin-right: 20px;
 }
 .blog .blogSection .blogContent .blogRow a .blogEvent .blogEventDate h2 {
   font-size: 40px;
@@ -650,7 +740,7 @@ p {
   margin-top: -20px;
 }
 .blog .blogSection .blogContent .blogRow a .blogEvent .blogEventContent {
-  width: 550px;
+  max-width: 550px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -680,9 +770,22 @@ p {
   color: RGB(238, 67, 103);
 }
 
+@media only screen and (max-width: 1750px) {
+  .blogContent {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .blogContent .blogRow {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .blogContent .blogRow a {
+    margin-bottom: 25px;
+  }
+}
 .blogSubPages {
   width: 100%;
-  height: 1250px;
+  min-height: 1250px;
   display: flex;
   flex-direction: column;
 }
@@ -691,6 +794,8 @@ p {
   height: 300px;
   margin: 0 auto;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -718,9 +823,10 @@ p {
 }
 .blogSubPages .blogSubWords {
   width: 75%;
-  height: 600px;
+  min-height: 600px;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -737,23 +843,24 @@ p {
   margin-top: 30px;
 }
 .blogSubPages .blogSubWords .blogSubWordsMajor {
-  width: 900px;
+  max-width: 900px;
   height: auto;
+  margin-bottom: 130px;
 }
 .blogSubPages .blogSubWords .blogSubWordsMinor {
-  width: 900px;
+  max-width: 900px;
   height: auto;
 }
 
 .contact {
   width: 100%;
-  height: 840px;
+  min-height: 840px;
   display: flex;
   flex-direction: column;
 }
 .contact .contactSection {
   width: 75%;
-  height: 725px;
+  min-height: 725px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -774,20 +881,20 @@ p {
 }
 .contact .contactSection .contactContent {
   width: auto;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .contact .contactSection .contactContent .contactInputs {
   width: 100%;
-  height: 525px;
+  min-height: 525px;
   display: flex;
   justify-content: space-between;
 }
 .contact .contactSection .contactContent .contactInputs .contactForm {
-  width: 54%;
-  height: auto;
+  width: 800px;
+  min-height: 525px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -816,8 +923,8 @@ p {
   margin-left: 20px;
 }
 .contact .contactSection .contactContent .contactInputs .contactMap {
-  width: 41%;
-  height: auto;
+  width: 575px;
+  min-height: 525px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -837,4 +944,28 @@ p {
   margin-top: 14px;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1850px) {
+  .contactContent {
+    margin-top: 75px;
+  }
+  .contactContent .contactInputs {
+    flex-direction: column;
+  }
+  .contactContent .contactInputs .contactForm {
+    margin-bottom: 50px;
+  }
+  .contactContent .contactInputs .contactMap {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .contactContent .contactButton {
+    margin-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .contactForm {
+    max-width: 100%;
+  }
 }

@@ -1,12 +1,12 @@
 .contact {
   width: 100%;
-  height: 840px;
+  min-height: 840px;
   display: flex;
   flex-direction: column;
 
   .contactSection {
     width: 75%;
-    height: 725px;
+    min-height: 725px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,20 +28,20 @@
     }
     .contactContent {
       width: auto;
-      height: 600px;
+      min-height: 600px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
       .contactInputs {
         width: 100%;
-        height: 525px;
+        min-height: 525px;
         display: flex;
         justify-content: space-between;
 
         .contactForm {
-          width: 54%;
-          height: auto;
+          width: 800px;
+          min-height: 525px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -72,8 +72,8 @@
           }
         }
         .contactMap {
-          width: 41%;
-          height: auto;
+          width: 575px;
+          min-height: 525px;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -97,5 +97,30 @@
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 1850px) {
+  .contactContent {
+    margin-top: 75px;
+
+    .contactInputs {
+      flex-direction: column;
+
+      .contactForm {
+        margin-bottom: 50px;
+      }
+      .contactMap {
+        max-width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+    .contactButton {
+      margin-bottom: 90px;
+    }
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .contactForm {
+    max-width: 100%;
   }
 }

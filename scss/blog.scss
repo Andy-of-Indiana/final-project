@@ -1,12 +1,12 @@
 .blog {
   width: 100%;
-  height: 1250px;
+  min-height: 1250px;
   display: flex;
   flex-direction: column;
 
   .blogSection {
     width: 75%;
-    height: 1125px;
+    min-height: 1125px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,31 +28,32 @@
     }
     .blogContent {
       width: auto;
-      height: 1050px;
+      min-height: 1050px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
       .blogRow {
         width: auto;
-        height: 340px;
+        min-height: 340px;
         display: flex;
         justify-content: space-between;
 
         a {
-          width: 47%;
           text-decoration: none;
 
           .blogEvent {
+            max-width: 650px;
             height: auto;
             display: flex;
             justify-content: space-between;
 
             .blogEventDate {
-              width: 80px;
+              min-width: 80px;
               height: 80px;
               background-color: $red;
               text-align: center;
+              margin-right: 20px;
 
               h2 {
                 font-size: 40px;
@@ -68,7 +69,7 @@
               }
             }
             .blogEventContent {
-              width: 550px;
+              max-width: 550px;
               height: auto;
               display: flex;
               flex-direction: column;
@@ -101,6 +102,20 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1750px) {
+  .blogContent {
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .blogRow {
+      flex-direction: column;
+      margin-bottom: 25px;
+      a {
+        margin-bottom: 25px;
       }
     }
   }

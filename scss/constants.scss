@@ -13,7 +13,7 @@
 
   nav {
     width: 75%;
-    height: 100px;
+    min-height: 100px;
     background-color: transparent;
     border: 2px;
     border-style: solid;
@@ -22,7 +22,7 @@
     justify-content: space-between;
     margin: 0 auto;
 
-    #logo {
+    .logo {
       width: 120px;
       height: 55px;
       margin-top: 25px;
@@ -51,7 +51,7 @@
     }
   }
   .homeGreeter {
-    width: 725px;
+    max-width: 725px;
     height: 270px;
     text-align: center;
     display: flex;
@@ -96,7 +96,7 @@
 }
 .navBlack {
   width: 75%;
-  height: 100px;
+  min-height: 100px;
   background-color: $white;
   border: 2px;
   border-style: solid;
@@ -110,7 +110,7 @@
     display: flex;
     justify-content: space-between;
 
-    #logo {
+    .logo {
       width: 120px;
       height: 55px;
       margin-top: 25px;
@@ -148,7 +148,7 @@
   justify-content: space-between;
   text-align: center;
 
-  #logo {
+  .logo {
     width: 120px;
     height: 55px;
     margin: 0 auto;
@@ -255,4 +255,73 @@
 @font-face {
   font-family: PTSerifReg;
   src: url(../assets/fonts/PTSerif-Regular.ttf);
+}
+
+//media queries
+@media only screen and (max-width: 950px) {
+  .footer {
+    height: 600px;
+    .footerInput {
+      height: 120px;
+      flex-direction: column;
+
+      .emailTextbox {
+        width: 100%;
+        height: 60px;
+      }
+      .emailButton {
+        width: 135px;
+        height: 60px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .navWhite {
+    height: 600px;
+
+    nav {
+      flex-direction: column;
+
+      .logo {
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+      .linksWhite {
+        width: 100%;
+      }
+    }
+  }
+  .navBlack {
+    nav {
+      flex-direction: column;
+
+      .logo {
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+      .linksBlack {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 655px) {
+  .footer {
+    .footerInput {
+      min-height: 120px;
+      flex-direction: column;
+
+      .emailTextbox {
+        width: 100%;
+        min-height: 80px;
+      }
+      .emailButton {
+        width: 135px;
+        min-height: 60px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
